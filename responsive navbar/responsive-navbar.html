@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar flex-center">
+        <div class="heading flex-center">
+            <h1>Navbar</h1>
+            <button>&#9776;</button>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const navLinks = document.querySelector(".nav-links");
+        const button = document.querySelector("button");
+
+        let isBlock = false;
+
+        const toggleNavigation = (show) => {
+            isBlock = show;
+            button.innerHTML = show ? "&#10006;" : "&#9776;";
+            navLinks.style.display = show ? "block" : "none";
+            setTimeout(() => {
+                navLinks.style.opacity = show ? "1" : "0";
+            }, 100);
+        };
+
+        const display = () => {
+            isBlock ? toggleNavigation(false) : toggleNavigation(true);
+        }
+
+        const handleScreenResize = () => {
+            const screenWidth = window.screen.width;
+            if (screenWidth > 600) toggleNavigation(true);
+        }
+
+        button.addEventListener('click', display);
+
+        window.addEventListener('resize', handleScreenResize);
+    </script>
+</body>
+
+</html>
