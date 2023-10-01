@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <!--Taking Information-->
+        <div class="inputInfo">
+            <div class="searchCity">
+                <label for="enteredCity">Search your City:</label>
+                <input type="text" id="zip" placeholder="Enter zip code here">
+            </div>
+            <div class="yourFeelings">
+                <label for="feelings">Your Feelings:</label>
+                <textarea name="feelings" id="feelings" cols="30" rows="5" placeholder="Tell me how are you feeling today?"></textarea>
+            </div>
+            <button class="button" id="generate">Check</button>
+        </div>
+    
+        <!--displaying Information-->
+        <div class="showingInfo" id="entryHolder">
+            <div class="cityFullName f-b">
+                <div class="cityName" id="name"></div>,
+                <span class="cityCountry" id="country"></span>
+            </div>
+            <div class="cityTime">
+                <div class="time" id="time"></div>
+                <div class="date" id="date"></div>
+            </div>
+            <div class="cityTemp" id="temp"></div>
+            <div class="cityWeatherDesc f-b"></div>
+            <div class="cityWeatherDetails">
+                <div class="cityFeelsLike" id="feels_like"></div>
+                <div class="cityHumidity" id="humidity"></div>
+                <div class="cityPressure" id="pressure"></div>
+            </div>
+            <div class="userFeelings">
+                Your Feelings:
+                <div class="feelings" id="content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
