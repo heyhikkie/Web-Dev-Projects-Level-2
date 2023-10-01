@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>index</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/Paint.png" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+<style>
+     #draw{
+          opacity:0px;
+     }
+
+     #sideimg{
+      top: 100px;
+      right: 30px;
+      position: relative;
+     }
+
+     #imagine, #draw, #design{
+      width:50px;
+      height: 50px;
+   /*   position: relative;*/
+     }
+
+
+   </style>
+
+</head>
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/Paint.png" alt="SimplyDraw">SimplyDraw</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link"  onclick="fun1()">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  
+  <script>
+          function fun1()
+
+{
+
+ var x=window.open("contact.html","popup","width=500, height=300");
+
+}
+        </script>
+
+<!-- page title -->
+<section class="page-title-alt bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white font-tertiary">About Us</h1>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img src="images/illustrations/leaf-bg-top.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="images/illustrations/dots-group-sm.png" alt="illustrations" class="bg-shape-2">
+  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-3">
+  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-5">
+  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-6">
+</section>
+<!-- /page title -->
+
+<!-- about -->
+<section class="section pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3><b>"There is something beautiful about a blank canvas, the nothingness of the beginning that is so simple and breathtakingly pure. It’s the paint that changes its meaning and the hand that creates the story"</b></h3>
+
+
+
+        <br>
+
+        <h5>SimplyDraw Paint tool can be used to draw, colour.<br>
+It can save creations in standard formats such as .png.<br>
+Paint can enable ‘painting’ by dragging the mouse and using different types of artistic brushes or pens. 
+Features included in paint are pencil, brush. Also included are an eraser, magnifier, and fill colour tools.
+</h5>
+      </div>
+      <div class="col-md-4 text-center drag-lg-top">
+        <div class="shadow-down mb-4">
+         <!--  <img src="images/about/abtpaint.jpg" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white"> -->
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <img src="images/about/abtpaint.jpg" alt="name" id = "sideimg"class="img-fluid">
+   <!--      <h4>ABC</h4> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+<!-- Work Process -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+       <center> <h2 class="section-title">Enjoy The Journey!</h2></center>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <div class="">
+          <img src="images/about/imagine.jpg" class="mb-4" id="imagine" alt="icon">
+          <h4 class="mb-4">Imagine</h4>
+          <p>Let your imagination go wild!!</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <img src="images/about/design.jpg" class="mb-4" id="design"alt="icon">
+        <h4 class="mb-4">Design</h4>
+        <p>Let your creativeness rock!!</p>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <img src="images/about/draw.jpg" class="mb-4" id="draw" alt="icon">
+       <!-- i class="fa fa-paint-brush" style="height: 100px" "width:100px" "position: relative;"></i> --> 
+        <h4 class="mb-4" >Draw</h4>
+        <p>Let us  help you to draw!!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./Work Process -->
+
+<!--  -->
+
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">simplydraw@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">+9807745836</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">India, Maharashtra</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+      </script> </a></p>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
