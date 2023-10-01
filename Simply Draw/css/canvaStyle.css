@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 160, 238);
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(153, 25, 200);
+    box-shadow: 5px 10px 10px rebeccapurple;
+}
+
+.header img {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-top: 0px;
+    margin-left: 35px;
+}
+
+.header h1 {
+    color: white;
+    font-size: 27px;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 15px;
+    float: left;
+    line-height: 50px;
+    padding: 17px 10px;
+}
+
+#myCanvas {
+    box-shadow: 8px 10px 15px gray;
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 80px;
+}
+
+.wrapper {
+    margin-top: 15px;
+    margin-left: 25px;
+    float: left;
+    border: none;
+    height: 100%;
+    width: 100px;
+}
+
+.wrapper .icon {
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    margin-top: 20px;
+}
+
+.wrapper .icon button {
+    border: none;
+    border-radius: 48%;
+}
+
+.wrapper .icon span {
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .icon:hover span {
+    color: #fff;
+}
+
+.wrapper .icon .tooltip {
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    right: -100px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .header img {
+        margin-left: 15px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    #myCanvas {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .wrapper {
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .header img {
+        margin-left: 10px;
+    }
+
+    #myCanvas {
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .wrapper {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+}
