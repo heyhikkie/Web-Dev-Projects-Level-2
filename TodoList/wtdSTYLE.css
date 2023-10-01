@@ -1,0 +1,22 @@
+body {
+    background-image:
+        linear-gradient(rgba(23, 24, 34, 0.600),
+            rgba(23, 24, 34, 0.600)),
+        url('wtd.jpg');
+}
+
+.title-head {
+    color: rgb(6, 164, 255);
+}
+
+.desc-head {
+    color: rgb(6, 164, 255);
+}
+
+.del-head {
+    color: rgb(6, 164, 255);
+}
+
+hr {
+    border-top: 1px solid rgb(26, 255, 95);
+}
