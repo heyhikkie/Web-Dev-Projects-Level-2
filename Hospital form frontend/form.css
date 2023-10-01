@@ -1,0 +1,84 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(bg\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Arial", sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px;
+    font-size: 3rem;
+}
+
+.container{
+    background-color: rgba(57, 101, 212, 0.675);
+    margin: 0 400px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.container h2{
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+input{
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+
+.button{
+    background-color: rgba(33, 196, 142, 0.816);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+#fl{
+    margin: 3px 10px 15px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+}
+
+#mail, 
+#address,
+#symptoms{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 320px;
+}
+
+#date{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+/*     margin-right: 20px; */
+    text-transform: uppercase;
+}
+
+span{
+    font-size: 1.1rem;
+    padding-right: 2px;
+    padding-left: 10px;
+}
