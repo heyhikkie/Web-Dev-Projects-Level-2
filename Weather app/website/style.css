@@ -1,0 +1,210 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: white;
+    background: #2193b0;
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+    display: flex;
+}
+
+.inputInfo {
+    flex: 1;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.inputInfo label {
+    margin-bottom: 0.625rem;
+    margin-right: 0.625rem;
+    font-weight: bold;
+}
+.inputInfo label:hover {
+    cursor: pointer;
+}
+
+.searchCity {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+}
+.searchCity input {
+    max-width: 100%;
+    height: 1rem;
+    padding: .5rem;
+    font-size: .875rem;
+    letter-spacing: 1px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in-out, border .3s ease-in-out;
+}
+
+.searchCity input:focus {
+    box-shadow: 0 0 5px #203a43; 
+    border: 1px solid transparent;
+}
+.yourFeelings {
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+}
+.yourFeelings textarea {
+    resize: none;
+    max-width: 100%;
+    padding: .5rem;
+    min-height: 3.125rem;
+    font-size: .875rem;
+    letter-spacing: 1.5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    transition: box-shadow .3s ease-in-out, border .3s ease-in-out;
+}
+.yourFeelings textarea:focus {
+    box-shadow: 0 0 5px #203a43; 
+    border: 1px solid transparent;
+}
+.button {
+  display: inline-block;
+  padding: .625rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  background-color: #4d90fe;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #357ae8;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #357ae8;
+}
+
+.button:active {
+  background-color: #2664c8;
+}
+
+
+/* showing info */
+
+.showingInfo {
+    display: none;
+    margin-left: 2rem;
+    flex: 1;
+    padding: 1.25rem;
+}
+
+.f-b {
+    font-weight: 700;
+}
+
+.cityFullName {
+    font-size: 2rem;
+}
+.cityName {
+    display: inline-block;
+}
+.cityTime {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.cityTemp {
+    font-size: 3rem;
+}
+.cityTemp::after {
+    content: '°C';
+    margin-left: 2px;
+}
+.cityWeatherDesc {
+    font-size: 1.5rem;
+}
+.cityWeatherDetails {
+    padding-top: 2rem;
+}
+.cityWeatherDetails > div {
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+.cityWeatherDetails > div:not(:last-child) {
+    border-right: 2px solid #fff;
+    margin-right: 1rem;
+}
+.cityFeelsLike::before {
+    content: "Feels Like ";
+    margin-right: .625rem;
+}
+.cityFeelsLike::after {
+    content: "°C";
+    margin-left: 2px;
+}
+.cityHumidity::before {
+    content: "Humidity ";
+    margin-right: .625rem;
+}
+.cityHumidity::after {
+    content: "%";
+    margin-left: 2px;
+}
+.cityPressure::before {
+    content: "Pressure ";
+    margin-right: .625rem;
+}
+.cityPressure::after {
+    content: "hPa";
+    margin-left: 2px;
+}
+
+.userFeelings {
+    width: 100%;
+    padding-block: 2rem;
+    font-size: 1.25rem;
+}
+
+.feelings {
+    padding-top: .5rem;
+}
+
+.feelings::before{
+    content: open-quote;
+}
+
+.feelings::after{
+    content: close-quote;
+}
+
+@media screen and (max-width: 701px) {
+    .container {
+        flex-direction: column;
+    }
+    .showingInfo {
+        margin-left: 0;
+    }
+}
