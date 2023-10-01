@@ -1,0 +1,210 @@
+.drowpdown{
+  background: transparent;
+  height: 40px;
+  
+  box-shadow: 0 16px 16px 0 rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  text-align: center;
+  
+
+}
+.drowpdown option{
+  background: transparent !important;
+  border-radius: 55px;
+  color: #000;
+  display: block;
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+  
+
+.card {
+ 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  text-align: center;
+  border: 5px;
+
+}
+.quote {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  font-family:  Times, Times New Roman, serif;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(234, 255, 0, 0.2);
+  
+  color: rgb(0, 0, 0);
+
+
+}
+.card-button {
+  position: absolute;
+  left: 65%;
+  top: 65%;
+  transform: translate(-50%, 0%);
+  width: 10%;
+  height: 40px;
+  line-height: 1px;
+
+  border-radius: 15px;
+  text-align: center;
+  border: 60px;
+  border-color: black;
+  
+  box-shadow: 0 8px 16px 0 rgba(143, 16, 154, 0.9);
+  cursor: pointer;
+}
+.card-button:hover {
+  box-shadow: 0 8px 16px 0 rgb(213, 82, 12);
+  
+  color: rgb(0, 0, 0);
+
+
+}
+
+.card-button-prev{
+  position: absolute;
+  left: 36%;
+  top: 65%;
+  transform: translate(-50%, 0%);
+  width: 10%;
+  height: 40px;
+  line-height: 1px;
+
+  border-radius: 15px;
+  text-align: center;
+  border: 60px;
+  border-color: black;
+  
+  box-shadow: 0 8px 16px 0 rgba(143, 16, 154, 0.9);
+  cursor: pointer;
+}
+
+.card-button-prev:hover {
+  box-shadow: 0 8px 16px 0 rgb(213, 82, 12);
+  
+  color: rgb(0, 0, 0);
+}
+
+/* On mouse-over, add a deeper shadow */
+
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+  
+  }
+  
+  
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+
+/*css for small screeens*/
+@media only screen and (max-width: 767px) {
+  .quote-card {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .quote-card p {
+    max-width: 80%;
+  }
+
+  .quote-card__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
