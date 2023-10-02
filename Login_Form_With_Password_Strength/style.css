@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: navy;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+form {
+    background-color: blanchedalmond;
+    width: 50rem;
+    padding-top: 0.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0% auto;
+    /* padding-bottom: rem; */
+    margin-top: 20px;
+    border-radius: 1rem;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 20rem;
+    border-radius: 5px;
+
+    margin-top: .5rem;
+}
+
+input[type="text"] {
+    margin-top: 0.3rem;
+
+}
+
+input[type="submit"],
+input[type="button"] {
+    margin-top: 0.2rem;
+    width: fit-content;
+    color: white;
+    background-color: navy;
+    border-radius: 50px;
+    height: 30px;
+    font-size: large;
+
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: white;
+    color: navy;
+}
+
+.password-check {
+    color: gray;
+}
+.check_ticks{
+    display: none;
+}
+#error{
+    margin-top: 20px;
+    color:red;
+    font-style: italic;
+}
