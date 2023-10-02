@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #315968;
+  transition: background-color 0.5s ease;
   margin: 0;
   padding: 0;
 }
@@ -37,6 +38,28 @@ body {
   border-radius: 8px;
   margin-top: 10px;
   background-color: #0074d9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#disco-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #1F2231;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#stop-disco-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: red;
   color: white;
   border: none;
   cursor: pointer;
