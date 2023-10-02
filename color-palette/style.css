@@ -32,36 +32,37 @@ body {
   transform: scale(1.1);
 }
 
-#generate-button {
+.btn {
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 8px;
   margin-top: 10px;
-  background-color: #0074d9;
   color: white;
   border: none;
   cursor: pointer;
+}
+
+#generate-button {
+  background-color: #0074d9;
 }
 
 #disco-button {
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  margin-top: 10px;
-  background-color: #1F2231;
-  color: white;
-  border: none;
-  cursor: pointer;
+  background-color: #04162E;
 }
 
 #stop-disco-button {
-  font-size: 18px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  margin-top: 10px;
   background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
 }
 
+@media screen and (max-width: 832px) {
+  .color-box {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #color-palette {
+    display: block;
+  }
+}
