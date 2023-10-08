@@ -1,18 +1,24 @@
+.category{
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+
 .drowpdown{
-  background: transparent;
+  background: #c7ccdb;
   height: 40px;
-  
+  top: 15%;
   box-shadow: 0 16px 16px 0 rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 50%;
-  top: 20%;
   width: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px;
   text-align: center;
-  
-
 }
+
 .drowpdown option{
   background: transparent !important;
   border-radius: 55px;
@@ -24,9 +30,8 @@
   text-decoration: none;
 }
   
-
 .card {
- 
+  background: #c7ccdb;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -45,9 +50,7 @@
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(234, 255, 0, 0.2);
-  
   color: rgb(0, 0, 0);
-
 
 }
 .card-button {
@@ -58,12 +61,12 @@
   width: 10%;
   height: 40px;
   line-height: 1px;
-
   border-radius: 15px;
   text-align: center;
   border: 60px;
   border-color: black;
-  
+  background-color: #4a4e69;
+  color: white;
   box-shadow: 0 8px 16px 0 rgba(143, 16, 154, 0.9);
   cursor: pointer;
 }
@@ -83,19 +86,18 @@
   width: 10%;
   height: 40px;
   line-height: 1px;
-
+  background-color: #4a4e69;
+  color: white;
   border-radius: 15px;
   text-align: center;
   border: 60px;
   border-color: black;
-  
   box-shadow: 0 8px 16px 0 rgba(143, 16, 154, 0.9);
   cursor: pointer;
 }
 
 .card-button-prev:hover {
   box-shadow: 0 8px 16px 0 rgb(213, 82, 12);
-  
   color: rgb(0, 0, 0);
 }
 

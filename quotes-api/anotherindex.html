@@ -1,109 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
 </head>
 
-
-
 <body>
-  
   <div>
     <div class="wave"></div>
     <div class="wave"></div>
     <div class="wave"></div>
- </div>
- <select id="quote-category" class="drowpdown">
-
+  </div>
   
-  <option value="inspirational">inspirational</option>
-  <option value="intelligence">intelligence</option>
-  <option value="knowledge">knowledge</option>
-  <option value="anger">anger</option>
-  <option value="happiness">happiness</option>
-
-</select>
-
-
+  <div class="category">
+    <h2>Select Quote Category</h2>
+    <select id="quote-category" class="drowpdown">
+      <option value="inspirational">inspirational</option>
+      <option value="intelligence">intelligence</option>
+      <option value="knowledge">knowledge</option>
+      <option value="anger">anger</option>
+      <option value="happiness">happiness</option>
+    </select>
+  </div>
 
   <div class="card">
-    
+    <h3>QUOTES</h3>
+    <hr>
     <div class="container">
-      <h4><b>Quotes</b></h4>
-      
+      <h4><b>........</b></h4>
     </div>
   </div>
 
   <div class="card-button" id="next-button">
-    
     <div class="container">
-      <p>Next</p>  
+      <p>Next &gt;</p>
     </div>
   </div>
-  
+
   <div class="card-button-prev" id="prev-button">
-    
     <div class="container">
-      <p>Prev</p>  
+      <p>&lt; Prev</p>
     </div>
   </div>
 
   <audio id="notif-sound" src="notif-sound.mp3"></audio>
 
-
-  
-</body>
-  
-  
-<script>
-const dropdown=document.getElementById('quote-category')
+  <script>
+    const dropdown = document.getElementById('quote-category')
 
 
-//////////////////////quotes api///////////////////////////
-let quotes = [];
-let currentIndex = -1;
+    //////////////////////quotes api///////////////////////////
+    let quotes = [];
+    let currentIndex = -1;
 
-const previousButton = document.getElementById('prev-button');
+    const previousButton = document.getElementById('prev-button');
 
-const nextbutton=document.getElementById('next-button');
-const card=document.querySelector('.card .container');
-const audio=new Audio('notification_sound.mp3');
-const reverseAudio=new Audio('reverse.mp3');
-nextbutton.onclick
-nextbutton.addEventListener('click',async ()=>{
-  try {
-    const category=dropdown.value;
-    currentIndex++;
-    if (currentIndex >= quotes.length) {
-      const req = await fetch('https://api.api-ninjas.com/v1/quotes?category='+category, {
-        headers: {
-          'x-api-key': 'MlC0RTXZoX0K+YZg2agIdw==HxUnjZGysUswE4Bk',
-        },
-      });
-      const res = await req.json();
-      const quote = res[0].quote;
-      if (!quote) {
-        throw new Error('No quote found');
+    const nextbutton = document.getElementById('next-button');
+    const card = document.querySelector('.card .container');
+    const audio = new Audio('notification_sound.mp3');
+    const reverseAudio = new Audio('reverse.mp3');
+    nextbutton.onclick
+    nextbutton.addEventListener('click', async () => {
+      try {
+        const category = dropdown.value;
+        currentIndex++;
+        if (currentIndex >= quotes.length) {
+          const req = await fetch('https://api.api-ninjas.com/v1/quotes?category=' + category, {
+            headers: {
+              'x-api-key': 'MlC0RTXZoX0K+YZg2agIdw==HxUnjZGysUswE4Bk',
+            },
+          });
+          const res = await req.json();
+          const quote = res[0].quote;
+          if (!quote) {
+            throw new Error('No quote found');
+          }
+          quotes.push(quote);
+        }
+        card.innerHTML = `<h4><b>${quotes[currentIndex]}</b></h4>`;
+        audio.play();
+      } catch (error) {
+        card.innerHTML = `<p>Error: ${error.message}</p>`;
       }
-      quotes.push(quote);
-    }
-    card.innerHTML = `<h4><b>${quotes[currentIndex]}</b></h4>`;
-    audio.play();
-  } catch (error) {
-    card.innerHTML = `<p>Error: ${error.message}</p>`;
-  }
-});
-previousButton.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    card.innerHTML = `<h4><b>${quotes[currentIndex]}</b></h4>`;
-    reverseAudio.play();
-  }
-});
-</script>
+    });
+    previousButton.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        card.innerHTML = `<h4><b>${quotes[currentIndex]}</b></h4>`;
+        reverseAudio.play();
+      }
+    });
+
+  </script>
 </body>
+
 </html>
