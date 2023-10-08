@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+}
+
+body header{
+	background-image: url(img/2.jpg);
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-top: 0.5rem solid #ec4141;
+	border-bottom: 0.5rem solid #ec4141;
+}
+
+nav{
+	display: flex;
+	height: 90px;
+}
+
+nav .logo{
+	color: white;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	font-weight: bolder;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+nav .logo span{
+	color: #ec4141;
+	font-size: 32px;
+	margin-left: 5px;
+}
+
+nav ul{
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+nav ul li{
+	list-style: none;
+
+}
+
+nav ul .active{
+	border-bottom: 2px solid #ec4141;
+	color: #ec4141;
+
+}
+
+nav ul a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	padding: 1rem 1.2rem;
+	margin: 0 0.3rem;
+	color: white;
+}
+
+nav ul a:hover{
+	border-bottom: 2px solid #ec4141;
+	color: #ec4141;
+
+}
+
+.header-container{
+	position: relative;
+	display: block;
+	width: 40%;
+	top: 25%;
+	left: 2%;
+}
+
+.header-container h1{
+	color: white;
+	font-size: 45px;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 2px;
+
+}
+.text-primary{
+	color: #ec4141;
+
+}
+.header-container h1 .border-bottom{
+	border-bottom: 2px solid #ec4141;	
+
+}
+
+.header-container p{
+	color: white;
+	margin-top: 2rem;
+	width: 80%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.btn{
+	padding: 0.6rem 1.5rem;
+	cursor: pointer;
+	outline: none;
+	border: 1.4px solid black;
+
+}
+
+.btn-primary{
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 2px;
+	margin-top: 2rem;
+	color: white;
+	background-color: #ec4141;
+	border: 1.4px solid #ec4141;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: all 0.5s linear;
+}
+
+.btn-primary:hover{
+	background-color: transparent;
+}
+
