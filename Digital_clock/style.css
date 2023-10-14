@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://media.istockphoto.com/photos/sunset-with-pebbles-on-beach-in-nice-france-picture-id1157205177?k=20&m=1157205177&s=612x612&w=0&h=bmCFFtaLRtF_eYhjZ3FkhPXU3X-yrdvr85xvl2CmQ9g=");
+    background-size: cover;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(180, 120, 51);
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 10px;
+    position: relative;
+
+}
+
+.clock span{
+    width: 100px;
+    height: 70px;
+    background: rosybrown;
+    opacity: .8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size:35px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.clock .text{
+    height: 30px;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    background: rgb(226, 175, 79);
+    opacity: 0.8;
+}
+
+.clock #ampm{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background: rgb(121, 121, 113);
+    bottom: 0;
+    position: absolute;
+
+}
