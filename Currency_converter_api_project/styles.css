@@ -1,0 +1,96 @@
+body{
+    background-color:rgb(151, 118, 74);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: aqua; */
+    max-width: 80vw;
+    margin: auto;
+}
+.container h1{
+    text-align: center;
+    font-style:normal;
+    margin-top: 23px;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+.container form button{
+    
+    width: auto;
+
+    border-radius: 13px;
+    padding: 15px;
+    /* margin-top: 18px; */
+    padding-left: 33px;
+    padding-right: 33px;
+    margin: auto;
+}
+.container form label{
+    font-size: 21px;
+    margin-bottom: 12px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.container form select{
+     width: auto;
+     height: 33px;
+     font-size: 18px;
+     margin-bottom: 18px;
+}
+.container form select option{
+    text-align: center;
+}
+
+
+.container form input[type='number'],input{
+    font-size: 19px;
+    
+    text-align: center;
+    width: auto;
+    height: 33px;
+    /* background-color: white */
+    margin-bottom: 23px;
+
+}
+
+
+.output h2{
+    font-size: 28px;
+    text-align: center;
+}
+.output{
+    display: none;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.output table{
+    /* width: 70vw; */
+    width: auto;
+    margin: auto;
+    /* align-items: center; */
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+    /* margin: auto; */
+}
+.output table th{
+    padding: 15px;
+}
+
+
+
