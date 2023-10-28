@@ -1,60 +1,60 @@
-.container {
-  max-width: 400px;
-  margin: 10vh auto 0 auto;
-  border-style: solid ;
-  border-width: 0.5vh;
-  border-color:rgb(184, 11, 11);
-  box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
-  background-color: rgb(160, 226, 160);
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ecf0f3;
+  font-family:sans-serif ;
+  outline: none;
 }
-
-#display {
-  text-align: right;
-  height: 70px;
-  line-height: 70px;
-  padding: 16px 8px;
-  font-size: 25px;
-  font-style:oblique;
-  color: #000000;
-  background-color: rgb(233, 243, 243);
-  border-style: solid;
-  border-color: #d629b1;
-  
+.container{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.buttons {
+.calculator{
+  background-color: #ecf0f3;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px #ffffff,
+                  5px 5px 12px rgba(0,0,0,0.16);
   display: grid;
-  border-bottom: 1px solid #999;
-  border-left: 1px solid#999;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  color: rgb(151, 30, 0);
-  background-color: rgb(207, 82, 180);
+  grid-template-columns: repeat(4,68px);
 }
-
-.buttons>div {
-  border-top: 1px solid #999;
-  border-right: 1px solid#999;
-  background-color: rgb(238, 234, 237);
+input{
+  grid-column: span 4;
+  height: 70px;
+  width: 260px;
+  background-color: #ecf0f3;
+  box-shadow:inset -5px -5px 12px #ffffff,
+              inset 5px 5px 12px rgba(0,0,0,0.16);
+  border: transparent;
+  border-radius: 30px;
+  font-size: 45px;
+  text-align: end;
+  margin: auto;
+  margin-top: 40px ;
+  margin-bottom: 30px;
+  padding: 20px;
 }
-
-.button {
-  border: 0.5px solid #999;
-  line-height: 70px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  background-color: rgb(51, 51, 51);
+button{
+  border: none;
+  font-size: 16px;
+  height: 48px;
+  width: 48px;
+  background-color: #ecf0f3;
+  box-shadow:inset -5px -5px 12px #ffffff,
+              inset 5px 5px 12px rgba(0,0,0,0.16);
+  border-radius: 50%;
+  margin: 8px;
 }
-
-#equal {
-  background-color: rgb(236, 159, 14);
-  color: white;
-  color: rgb(25, 255, 255);
+.equal{
+  
+  width: 120px;
+  border-radius: 40px;
 }
-
-.button:hover {
-  background-color: #eef12c;
-  color: white;
-  transition: 0.5s ease-in-out;
+h2{
+  font-family: sa;
+  color:dimgray
 }
-
+      

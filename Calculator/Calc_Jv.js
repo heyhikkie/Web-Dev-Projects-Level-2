@@ -1,27 +1,21 @@
-let display = document.getElementById('display');
+let outputScreen = document.getElementById('output-screen');
 
-let buttons = Array.from(document.getElementsByClassName('button'));
+function display(num){
+    outputScreen.value += num;
+}
 
-buttons.map(button => {
-  button.addEventListener('click', (e) => {
-    switch (e.target.innerText) {
-      case 'C':
-        display.innerText = '';
-        break;
-      case '=':
-        try {
-          display.innerText = eval(display.innerText);
-        } catch {
-          display.innerText = "Error"
-        }
-        break;
-      case '←':
-        if (display.innerText) {
-          display.innerText = display.innerText.slice(0, -1);
-        }
-        break;
-      default:
-        display.innerText += e.target.innerText;
+function Calculate(){
+    try{
+        outputScreen.value= eval(outputScreen.value);
     }
-  });
-});
+    catch{
+        alert("Invalid");
+    }
+}
+
+function Clear(){
+    outputScreen.value = "";
+}
+function del(){
+    outputScreen.value = outputScreen.value.slice(0,-1);
+}

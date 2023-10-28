@@ -12,12 +12,12 @@ body{
 .container{
     height: 276px;
     width: 424px;
-    background: #ae00ff;
+    background: red;
     border-radius: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(0 0 1em rgb(36, 0, 238));
+    filter: drop-shadow(0 0 1em red);
 
 }
 .triangle{
@@ -25,5 +25,5 @@ body{
     height: 0;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
-    border-left: 100px solid rgb(0, 0, 0);
+    border-left: 100px solid white;
 }
